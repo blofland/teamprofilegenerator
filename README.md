@@ -1,6 +1,6 @@
 # Generate HTML DEV Team
 
-This is a CLI to populate and create a html document for a development team.
+This is a CLI to populate and create a html document to display a development team.
 
 This document uses inquirer to prompt the user about the manager, engineers and interns on the team then delivers a modified html file found in ```/dist/output.html```.
 

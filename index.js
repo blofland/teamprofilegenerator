@@ -66,6 +66,7 @@
 
 const HtmlGenerator = require("./html-generator")
 const Engineer = require("./lib/Engineer")
+const Intern = require("./lib/Intern")
 const Manager = require("./lib/Manager")
 const Team = require("./lib/Team")
 const team = new Team()
@@ -79,4 +80,16 @@ team.teammates.engineers = [
     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'})
 ]
+
+team.teammates.interns = [
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'})
+]
+
 new HtmlGenerator(team)

@@ -16,7 +16,6 @@ class HtmlGenerator{
     }
     
     findNestedNode(group){
-        // return("querySelector" in this.document)
         return function(attribute){
             return this.document.querySelector(`#${group} [data-attribute='${attribute}']`)
         }.bind(this)

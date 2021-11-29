@@ -70,25 +70,26 @@ const Intern = require("./lib/Intern")
 const Manager = require("./lib/Manager")
 const Team = require("./lib/Team")
 const team = new Team()
-// team.teammates.manager = new Manager({name: "Nate", id: 123, email: 'email@email.com', officeNumber: '(801) 453-7756'})
-// team.teammates.engineers = [
-//     new Engineer({id: 123, name: "Mr. Sir", email: 'test_email@email.com', github: 'http://github.com/blofland'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
-//     new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'})
-// ]
+team.teammates.manager = new Manager({name: "Nate", id: 123, email: 'email@email.com', officeNumber: '(801) 453-7756'})
+team.teammates.engineers = [
+    new Engineer({id: 123, name: "Mr. Sir", email: 'test_email@email.com', github: 'http://github.com/blofland'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'}),
+    new Engineer({id: 1323, name: "Ariel", email: 'another_email@email.com', github: 'http://github.com/Naternelson'})
+]
 
-// team.teammates.interns = [
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
-//     new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'})
-// ]
-team.prompt()
+team.teammates.interns = [
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'}),
+    new Intern({id: 123, name: "Mr. Sir", email: 'test_email@email.com', school: 'UofU'})
+]
+// team.prompt()
+new HtmlGenerator(team)

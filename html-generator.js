@@ -73,42 +73,10 @@ class HtmlGenerator{
     }
     updateEngineersHtml(engineers){
         this.updateCollection(engineers, "Engineer", "#engineer-cards")
-        // const ec = this.document.querySelector("#engineer-cards")
-        // engineers.forEach(e => {
-            
-        //     const col = this.document.createElement("div")
-        //     col.className = "col s4"
-        //     ec.append(col)
-
-        //     const card = this.document.createElement("div")
-        //     card.className = "card-panel transparent z-depth-0"
-        //     col.append(card)
-
-        //     const cardBody = this.document.createElement("div")
-        //     cardBody.className = "card-content"
-        //     card.append(cardBody)
-
-        //     const title = this.document.createElement("h5")
-        //     title.className = "card-title"
-        //     title.textContent = "Engineer"
-        //     cardBody.append(title)
-
-        //     const ul = this.document.createElement("ul")
-        //     cardBody.append(ul)
-        //     for(let key in e){
-        //         if(key === "role") continue
-        //         const display = key === "id" ? "ID" : startCase(key)
-        //         const li = this.document.createElement("li")
-        //         li.textContent = `${display}: ${e[key]}`
-        //         li.className = "truncate"
-        //         ul.append(li)
-        //     }
-
-        // })
     }
     render(){
         return new Promise((res, rej)=>{
-            fs.writeFile(path.resolve(__dirname, "./output.html"), this.document.documentElement.outerHTML,(err) => {
+            fs.writeFile(path.resolve(__dirname, "./dist/output.html"), this.document.documentElement.outerHTML,(err) => {
                 if(err) return rej(err)
                 console.log("Successfully wrote to file")
             })

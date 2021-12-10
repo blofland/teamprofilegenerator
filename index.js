@@ -13,13 +13,7 @@ function addManager() {
             message: 'What is your office number?'
         },
 
-        {
-            type: 'list',
-            name: 'role',
-            message: 'Who would you like to add to your team?',
-            choices: ['Engineer', 'Intern', 'Finished']
-        }
-
+      
     ])
 }
 
@@ -63,3 +57,13 @@ function addEmployee() {
         message: 'What is your ID number?'
     },
 ])}
+
+function addTeam() {
+    inquirer.prompt({
+        type: 'list',
+        name: 'role',
+        message: 'Who would you like to add to your team?',
+        choices: ['Engineer', 'Intern', 'Finished',]
+    });
+
+}

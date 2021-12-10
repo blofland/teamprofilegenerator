@@ -17,7 +17,11 @@ This project generates new instances of an employee depending on their role. Eac
 ## CSS
 The css for this project was all using the materialize.css 
 
+## Walkthrough Video
+https://watch.screencastify.com/v/mJxf52yH54LbRmMeVzxc
+
 ---
 
 This project is free to use under all licences.
-For more projects like this check out my [github](http://github.com/blofland) 
+For more projects like this check out my [github](http://github.com/blofland) ![Screenshot 2021-12-10 132406](https://user-images.githubusercontent.com/84938746/145636899-265817bc-79a9-4ae9-9bf1-a4f35e452dff.jpg)
+
